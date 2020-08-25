@@ -2,4 +2,5 @@
 
 My first project with a .io
 
-To go to my index.html, [click here](https://brunozhong.github.io/Base/index.html).
+Try it: [https://brunozhon.github.io](https://brunozhon.github.io).
+
