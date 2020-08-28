@@ -3,6 +3,10 @@
   <head>
     <title>My website</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script>
+       document.getElementById("hostname").innerHTML = "Page host name is: " + window.location.hostname;
+       document.getElementById("protnumber").innerHTML = "Page protocol number is (defualt is 443): " + window.location.port;
+    </script>
   </head>
   <body>
     <div class="w3-bar w3-green">
@@ -11,6 +15,9 @@
     <div class="w3-container w3-row-padding">
       <div class="w3-quarter w3-green w3-hide-large">
         <h3>My website</h3>
+        <p>Info:</p>
+        <p id="hostname"></p>
+        <p id="protnumber"></p>
       </div>
       <div class="w3-rest">
         <h2>Section 1: About me</h2>
