@@ -16,7 +16,7 @@
               <td><xsl:value-of select="price" /></td>
               <td><xsl:value-of select="discount" /></td>
             </tr>
-          </xsl:foreach>
+          </xsl:for-each>
         </table>
       </body>
     </html>
