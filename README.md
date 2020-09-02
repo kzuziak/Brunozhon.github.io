@@ -30,3 +30,57 @@ It is a JavaScript libary to simplfy complex functions.
 
 1. Donload one or more of my files in the BrunoScript folder.
 2. Upload the file(s) as you would in you computer.
+
+### Diffrent programming languges
+
+#### HTML / XHTML
+
+Add the tag in HTML:
+
+```html
+<script src="URL"></script>
+```
+
+### JavaScript
+
+Add this code:
+
+```javascript
+import URL;
+```
+### Using BrunoScript
+
+#### HTML / XHTML
+
+```html
+<script src="URL"></script>
+<script>
+  //Some code
+</script>
+```
+
+or
+
+```html
+<!-- Import BrunoScript -->
+<script src="URL"></script>
+<!-- Use BrunoScript -->
+<script src="URL"></script>
+```
+
+#### JavaScript
+
+```javascript
+import URL;
+//Some code
+```
+
+or
+
+```javascript
+//Import BrunoScript
+import URL;
+//Use from a external file
+import URL;
+//Some code
+```
