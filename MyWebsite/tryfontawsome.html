@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Try font awsome editor v1.0</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <script>
+      var app = angular.module("fontApp", []);
+      app.controller("fontCtrl", function($scope) {
+        $scope.style = "fas";
+        $scope.icon = "user-astronaut";
+        $scope.color = "#000000";
+        $scope.misc = "";
+      });
+    </script>
+    <div ng-app="fontApp" ng-controller="fontCtrl">
+      <p>Result of icon:</p>
+      <p>Icon attributes preview: class="{{style}} fa-{{icon}}" style="color: {{color}};"</p>
+      <div class="{{style}} fa-{{icon}}" style="color: {{color}};"></div>
+      <p>Icon style: <input ng-model="style" placeholder="fas, far, fad, or fal" /></p>
+      <p>Icon: <input ng-model="icon" placeholder="Please enter a icon name... More than 1500 icons!" /></p>
+      <p>Icon color: <input ng-model="color" placeholder="Please enter a CSS color, hex, rgb, or rgba value" /></p>
+      <p>Misc. clases on your icon go here: <input ng-model="misc" placeholder="Add misc. classes (optional)" /></p>
+    </div>
+  </body>
+</html>
