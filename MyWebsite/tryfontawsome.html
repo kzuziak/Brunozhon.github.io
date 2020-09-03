@@ -13,16 +13,18 @@
         $scope.icon = "user-astronaut";
         $scope.color = "#000000";
         $scope.misc = "";
+        $scope.misccss = "background-color: #808080"
       });
     </script>
     <div ng-app="fontApp" ng-controller="fontCtrl">
       <p>Result of icon:</p>
-      <p>Icon attributes preview: class="{{style}} fa-{{icon}} {{misc}}" style="color: {{color}};"</p>
-      <div class="{{style}} fa-{{icon}} {{misc}}" style="color: {{color}};"></div>
+      <p>Icon attributes preview: class="{{style}} fa-{{icon}} {{misc}}" style="color: {{color}}; {{misccss}}"</p>
+      <div class="{{style}} fa-{{icon}} {{misc}}" style="color: {{color}}; {{misccss}}"></div>
       <p>Icon style: <input ng-model="style" placeholder="fas, far, fad, or fal" /></p>
       <p>Icon: <input ng-model="icon" placeholder="Please enter a icon name... More than 1500 icons!" /></p>
       <p>Icon color: <input ng-model="color" placeholder="Please enter a CSS color, hex, rgb, or rgba value" /></p>
-      <p>Misc. clases on your icon go here: <input ng-model="misc" placeholder="Add misc. classes (optional)" /></p>
+      <p>Misc. font awesome props. : <input ng-model="misc" placeholder="Add misc. classes (optional)" /></p>
+      <p>Misc. CSS props. : <input ng-model="misccss" placeholder="add misc. CSS props. (optional)" /></p>
     </div>
   </body>
 </html>
