@@ -17,8 +17,8 @@ It is a JavaScript libary to simplfy complex functions.
 1. Donload one or more of the files in the BrunoScript folder.
 2. When donload is complete, add a link to it with the folling suggestions:
   - If the file is stored at the same folder as your file, do this: *`filename.fileextensiton`*
-  - If the file is stored away from the root in a folder, do this *`/foldername/filename.fileextension`* or this *`directory/foldername/filename.fileextension`*
-  - If the file is stored at the root, do this: *`/filename.fileextension`* or this *`directory/filename.fileextension`*
+  - If the file is stored away from the root in a folder, do this *`/foldername/filename.fileextension`* or this *`protocol://directory/foldername/filename.fileextension`*
+  - If the file is stored at the root, do this: *`/filename.fileextension`* or this *`protocol://directory/filename.fileextension`*
 3. Once you do that, you can use BrunoScript anywhere, anytime!
 
 ### Use from brunozhon.github.io steps
@@ -41,7 +41,7 @@ Add the tag in HTML:
 <script src="URL"></script>
 ```
 
-### JavaScript
+#### JavaScript
 
 Add this code:
 
@@ -84,3 +84,57 @@ import URL;
 import URL;
 //Some code
 ```
+
+### Examples of BrunoScript
+
+#### Corect:
+
+BrunoScript set() function
+
+```javascript
+import 'https://brunozhon.github.io/BrunoScript/brunoscript.min.js';
+set("Name", "John Doe");
+```
+
+BrunoScript get() function
+
+```javascript
+import 'https://brunozhon.github.io/BrunoScript/brunoscript.min.js';
+set("Name", "John Doe");
+console.log("His name is " + get("Name"))
+```
+
+#### Wrong:
+
+BrunoScript set() function
+
+```javascript
+import 'https://brunozhon.github.io/BrunoScript/brunoscript.min.js';
+set(3, "Bruno") //Error!
+```
+
+BrunoScript get() function
+
+```javascript
+import 'https://brunozhon.github.io/BrunoScript/brunoscript.min.js';
+console.log(get("Date")) //Error!
+console.log(get(3)) // Error!
+set("Today", "Monday")
+console.log(get("today")) // Error!
+```
+
+##### Warning!
+
+The **import** function is diffrent from **inport**
+
+```javascript
+inport 'https://brunozhon.github.io/BrunoScript/brunoscript.min.js'; //Error!
+```
+
+JavaScript will problay think it is:
+
+```javascript
+inport; 'https://brunozhon.github.io/BrunoScript/brunoscript.min.js'; //Closed after inport and the string
+```
+
+Or it will throw a error. Note: Errors will be diffrent in diffrent browsers. Try **Google Chrome** and **Safari**.
