@@ -1,7 +1,5 @@
 <svg>
-  <g transform="translate(100, 100)">
-    <text id="TextElement" x="0" y="0" style="font-family:Verdana; font-size:24;">
-      Hello world!
-    </text>
-  </g>
+  <text id="TextElement" x="0" y="0" style="font-family:Verdana; font-size:24;">
+    Hello world!
+  </text>
 </svg>
