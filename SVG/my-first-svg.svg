@@ -1,5 +1,5 @@
 <svg height="600px" width="600px" xmlns="http://www.w3.org/2000/svg">
-  <text x="0" y="0">
+  <text x="0" y="0" fill="black">
     Hello world!
   </text>
 </svg>
