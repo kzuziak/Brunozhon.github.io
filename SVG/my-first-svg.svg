@@ -1,5 +1,5 @@
-<svg>
-  <text id="TextElement" x="0" y="0" style="font-family:Verdana; font-size:24;">
+<svg height="600px" width="600px">
+  <text x="0" y="0">
     Hello world!
   </text>
 </svg>
