@@ -211,4 +211,21 @@ Font size|Default (Most of the time, 16px)|Depending on the element
 Uses|Writes to the page|Writes to the page, changes font style, changes color, etc.
 Can be assigned to a varible|No|Yes
 Can return `null` or `undefined`|No|If the ID is not found
-Can overwrite elements/document content|If you use on a loaded HTML page|If you usr `=` rather than `+=`
+Can overwrite elements/document content|If you use on a loaded HTML page|If you use `=` rather than `+=`
+
+#### How about `document.qureySelectorAll()`, `document.getElementById()` vs. `document.write()`
+
+Let's change the heading to: "How about `document.getElementById()`~,~**vs.** `document.getElementById`~vs. `document.write()`~"
+
+Rule|`document.qureySelectorAll`|`document.getElementById`
+----|---------------------------|------------------------
+Writing|Writes to the spcified element or element.className|Writes to the spcified ID
+Won't work|If the element or element.className is not found|If the ID is not found
+Overwrites|Never|Never
+Writes on new line|Depending on the element|Depending on the element
+Type|`[object NodeList]`|`[object HTMLColection]`
+Font size|Depending on the element|Depending on the element
+Uses|Writes to the page, changes the font style, changes color, etc.|Writes to the page, changes the font style, changes color, etc.
+Can be assigned to a varible|Yes|Yes
+Can return `null` or `undefined`|If the element or element.className in not found|If the ID is not found
+Can overwrite elements content|If you use `=` instead of `+=`|If you use `=` instead of `+=`
