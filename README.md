@@ -138,3 +138,77 @@ inport; 'https://brunozhon.github.io/BrunoScript/brunoscript.min.js'; //Closed a
 ```
 
 Or it will throw a error. Note: Errors will be diffrent in diffrent browsers. Try **Google Chrome** and **Safari**.
+
+### BrunoScript examples
+
+You can add the code `import 'https://brunozhon.github.io/BrunoScript/brunoscript.min.js';` to make your first brunoscript application!
+
+#### First BrunoScript application
+
+Add a new file and write this:
+
+```javascript
+set("msg", "Hello world!");
+document.write("This is a example where you 'write' javascript into HTML:<br>");
+document.write(get("msg"));
+```
+
+It will print:
+```
+This is a example where you 'write' javascript into HTML:
+
+Hello world!
+```
+#### This example is diffrent... it is using the CLI 
+
+Save the file from the last example `helloworld.js`
+
+Add a new file and write this:
+
+```javascript
+import 'helloworld.js';
+console.warn("Notice: The example added is in the CLI. The rest are imported.");
+console.log("This example is diffrent.");
+console.log("This example is using the CLI and will print:");
+console.log(get("msg"));
+```
+
+It will print:
+```
+This is a example where you 'write' javascript into HTML:
+
+Hello world!
+```
+But when they press `F12`:
+```
+Notice: The example added in in the CLI. The rest are imported.
+
+This example is diffrent.
+
+This example is using the CLI and will print:
+
+Hello world!
+```
+
+### The `document.write()` function vs. BrunoScript
+
+The `document.write()` method is the easist way of writing in HTML but not a good practice.
+
+It can overwrite existing HTML after the page is loaded.
+
+Use the `document.getElementById()` method instead.
+
+#### See the diffrences bettwen `document.write()` and `document.getElementById()`
+
+Rule|`document.write()`|`document.getElementById()`
+----|------------------|---------------------------
+Writing|Writes to the bottom of your page | Writes to the specifcied ID
+Won't work|Never|If the ID is not found
+Overwites|If you use it on a loaded HTML page|Never
+Writes on new line|Never|Depending on the HTML element
+Type|` `|`[object HTMLCollection]`
+Font size|Default (Most of the time, 16px)|Depending on the element 
+Uses|Writes to the page|Writes to the page, changes font style, changes color, etc.
+Can be assigned to a varible|No|Yes
+Can return `null` or `undefined`|No|If the ID is not found
+Can overwrite elements/document content|If you use on a loaded HTML page|If you usr `=` rather than `+=`
