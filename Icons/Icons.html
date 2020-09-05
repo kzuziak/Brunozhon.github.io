@@ -2,8 +2,22 @@
 <html>
   <head>
     <title>Icon preview</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
   <body>
+    <script>
+      var app = angular.module("findApp", []);
+      app.controller("icon", function($scope) {
+        $scope.icons = [
+          "hr-icon",
+          "shadow",
+          "text",
+          "text-rotate",
+          "quotes"
+        ];
+        $scope.search = "";
+      });
+    </script>
     <h1>Our icons!</h1>
     <table>
       <tr>
@@ -31,5 +45,13 @@
         <td><a href="https://brunozhon.github.io/Icons/quotes.svg">View it</a></td>
       </tr>
     </table>
+    <div ng-app="findApp" ng-controller="icon">
+      <input ng-model="search" />
+      <ul>
+        <li ng-repeat="x in icons | filter:search">
+          {{x}}
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
