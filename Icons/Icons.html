@@ -47,9 +47,10 @@
     </table>
     <div ng-app="findApp" ng-controller="icon">
       <input ng-model="search" />
+      <p>{{search}} mactches: </p>
       <ul>
         <li ng-repeat="x in icons | filter:search">
-          {{x}}
+          {{$index + 1}}. {{x}}
         </li>
       </ul>
     </div>
