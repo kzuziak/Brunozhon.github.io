@@ -307,9 +307,9 @@ XML:
 
 Also, SVG elements need to be closed like this:
 
-Open element: <tagname>content</tagname>
+Open element: `<tagname>content</tagname>`
 
-Closed element: <tagname />
+Closed element: `<tagname />`
 
 Correct:
 
