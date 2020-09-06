@@ -229,3 +229,94 @@ Uses|Writes to the page, changes the font style, changes color, etc.|Writes to t
 Can be assigned to a varible|Yes|Yes
 Can return `null` or `undefined`|If the element or element.className in not found|If the ID is not found
 Can overwrite elements content|If you use `=` instead of `+=`|If you use `=` instead of `+=`
+
+## Bruno Icons
+
+Bruno icons are SVG files.
+
+You can show our icons by this syntax: `https://brunozhon.github.io/Icons/`*`iconname`*`.svg`
+
+### Using icons in the `<svg></svg>` element
+
+
+A icon icon:
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg">
+  <use xlink:href="https://brunozhon.github.io/Icons/icon.svg" />
+</svg>
+```
+
+A text-rotate icon:
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg">
+  <use xlink:href="https://brunozhon.github.io/Icons/text-rotate.svg" />
+</svg>
+```
+
+### Using icons in HTML (`<svg></svg>`)
+
+A icon icon:
+
+```html
+<html>
+  <body>
+    <svg>
+      <use xlink:href="https://brunozhon.github.io/Icons/icon.svg" />
+    </svg>
+  </body>
+</html>
+```
+
+A text-rotate icon:
+
+```html
+<html>
+  <body>
+    <svg>
+      <use xlink:href="https://brunozhon.github.io/Icons/text-rotate.svg" />
+    </svg>
+  </body>
+</html>
+```
+
+*Since you know how to use the `<img>` element, we're going to skip it*
+
+### WARNING!
+
+SVG is based on XML, so these 2 examples store the same info:
+
+SVG:
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg">
+  <use xlink:href="https://brunozhon.github.io/Icons/icon.svg" />
+</svg>
+```
+
+XML:
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg">
+  <use xlink:href="https://brunozhon.github.io/Icons/icon.svg" />
+</svg>
+```
+
+...but **only** the SVG example displays a graphic.
+
+Also, SVG elements need to be closed like this:
+
+Open element: <tagname>content</tagname>
+
+Closed element: <tagname />
+
+Correct:
+
+```svg
+<svg>
+  <text>I love SVG!
+    <animate attributeName="color" attributeType="CSS" from="black" to="white" begin="1s" dur="5s" />
+  </text>
+</svg>
+```
