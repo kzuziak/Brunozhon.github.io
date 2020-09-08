@@ -37,6 +37,6 @@ brunoscript.isRealObject = function(obj) {
     return false;
   }
 }
-brunoscript.objectEncode(str) {
+brunoscript.objectEncode = function(str) {
   eval("return " + str);
 }
