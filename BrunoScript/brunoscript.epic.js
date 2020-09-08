@@ -15,7 +15,7 @@ brunoscript.objectDecode = function(obj) {
     return txt;
   }
 }
-brunoscript.isRealObject(obj) {
+brunoscript.isRealObject = function(obj) {
   if (
      typeof obj == "object" && /*A object...*/
      obj !== null && /*Value of object != null...*/
