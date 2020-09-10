@@ -1,0 +1,8 @@
+{
+  "name":"Brunozhon.github.io",
+  "description":"",
+  "version":"v1.1.1",
+  "publishConfig":{
+    "registry":"https://npm.pkg.github.com/"
+  }
+}
