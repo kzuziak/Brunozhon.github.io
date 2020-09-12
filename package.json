@@ -4,5 +4,10 @@
   "version":"v1.1.1",
   "publishConfig":{
     "registry":"https://npm.pkg.github.com/"
+  },
+  "author":{
+    "name":"Bruno Zhong",
+    "email":"Bruno35.zhong@gmail.com",
+    "website":"https://brunozhon.github.io"
   }
 }
