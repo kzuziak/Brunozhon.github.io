@@ -9,5 +9,10 @@
     "name":"Bruno Zhong",
     "email":"Bruno35.zhong@gmail.com",
     "website":"https://brunozhon.github.io"
-  }
+  },
+  "license":"BSD-2",
+  "bugs":{
+    "url":"https://github.com/Brunozhon/Brunozhon.github.io/issues"
+  },
+  "homepage":"https://brunozhon.github.io"
 }
