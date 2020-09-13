@@ -14,5 +14,8 @@
   "bugs":{
     "url":"https://github.com/Brunozhon/Brunozhon.github.io/issues"
   },
-  "homepage":"https://brunozhon.github.io"
+  "homepage":"https://brunozhon.github.io",
+  "dependencies":{
+    "blog":"~1.0.0"
+  }
 }
