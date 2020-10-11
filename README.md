@@ -320,3 +320,10 @@ Correct:
   </text>
 </svg>
 ```
+
+# Changes
+
+## Additions
+
+- Added robots.txt
+- Added sitemap.txt
